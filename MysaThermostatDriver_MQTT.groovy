@@ -641,7 +641,7 @@ def buildMysaCommand(String cmdType, value) {
             bodyType = 4  // V2 non-Lite
         }
     } else if (model.startsWith("INF-V1")) {
-        bodyType = 1  // Floor heater, assume V1 format
+        bodyType = 3  // Floor heater
     }
     
     logDebug "Model '${model}' -> body.type = ${bodyType}"
